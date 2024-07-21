@@ -2,7 +2,7 @@ FROM nginx:latest
 
 RUN apt-get -y update && apt-get -y install git
 
-RUN git clone https://github.com/damatechguy27/gameapps.git && rm -rf /usr/share/nginx/html/* && cp -rf gameapps/Demonoire/* /usr/share/nginx/html
+RUN git clone https://github.com/damatechguy27/gameapps.git && rm -rf /usr/share/nginx/html/* && cp -rf gameapps/Glokar/* /usr/share/nginx/html
 
 RUN rm -rf gameapps/
 
